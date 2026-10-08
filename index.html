@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexus - Modern, intelligent digital platform built for creators, teams, and ambitious digital ventures.">
+  <meta name="theme-color" content="#0a0c10">
+  <title>Nexus — Empower Your Digital Vision</title>
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%230a0c10'/%3E%3Cpath d='M8 22L16 10L24 22H18.5L16 16.5L13.5 22H8Z' fill='url(%23g)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Background decorative light orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Nexus Home">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 19.5H7.5L12 10.5L16.5 19.5H22L12 2Z" fill="url(#logo-grad)"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="2" y1="2" x2="22" y2="19.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#818cf8"/>
+                <stop offset="0.5" stop-color="#6366f1"/>
+                <stop offset="1" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name">Nexus<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Nav Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="mobile-cta-wrapper">
+          <a href="#contact" class="btn btn-primary btn-sm mobile-cta">Start Free Trial</a>
+        </div>
+      </nav>
+
+      <!-- Nav Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch color theme" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm desktop-cta">Get Started</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Next-Generation Platform • v2.4 Live</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+
+          <h1 class="hero-title">
+            Build, Scale &amp; Elevate Your <span class="gradient-text">Digital Vision</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Nexus gives modern teams the unified toolkit to design, deploy, and accelerate high-impact web experiences in record time. Intuitive, ultrafast, and crafted with purpose.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Start Free Trial</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <span>Explore Features</span>
+            </a>
+          </div>
+
+          <!-- Social Proof / Stats Strip -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">99.98%</span>
+              <span class="stat-label">Uptime SLA</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">120K+</span>
+              <span class="stat-label">Active Users</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9 / 5</span>
+              <span class="stat-label">User Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="showcase-card-wrapper">
+            <div class="card-glow-reflection" aria-hidden="true"></div>
+            <div class="showcase-card">
+              <div class="browser-bar">
+                <div class="traffic-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="browser-address">nexus.io/analytics/live</div>
+                <div class="browser-status">
+                  <span class="live-indicator"></span> Live
+                </div>
+              </div>
+              <div class="showcase-image-container">
+                <img src="assets/hero-mockup.jpg" alt="Nexus Real-time SaaS Dashboard Interface" class="showcase-image" loading="eager">
+              </div>
+            </div>
+
+            <!-- Floating Micro Badges -->
+            <div class="floating-badge badge-speed">
+              <div class="badge-icon-wrap zap">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="badge-content">
+                <span class="badge-title">Speed Score</span>
+                <span class="badge-value">100 / 100</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-sync">
+              <div class="badge-icon-wrap sync">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="badge-content">
+                <span class="badge-title">Sync Complete</span>
+                <span class="badge-value">Real-time Cloud</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">About Us</span>
+          <h2 class="section-title">Designed with Precision, Built for Scale</h2>
+          <p class="section-description">
+            We are redefining how high-velocity teams design, orchestrate, and launch digital software. Our platform combines intelligent automation with intuitive user-first engineering.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Detailed Description & Values -->
+          <div class="about-story-card">
+            <h3 class="about-story-title">Our Mission</h3>
+            <p class="about-story-text">
+              Founded by passionate engineers and product designers, Nexus eliminates the friction between creative ideation and technical execution. We believe that world-class software should be accessible, blazingly fast, and genuinely enjoyable to use every single day.
+            </p>
+            <p class="about-story-text">
+              Whether you are an ambitious indie creator or an enterprise scaling across continents, our platform gives you rock-solid stability, unmatched aesthetics, and the agility to outpace competition.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Lightning Rapid Onboarding</h4>
+                  <p class="highlight-desc">Go from initial setup to production deployment in less than 5 minutes.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Excellence by Default</h4>
+                  <p class="highlight-desc">Meticulously crafted components adhering to WCAG accessibility and modern UX standards.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Value Cards Stack -->
+          <div class="about-stats-panel">
+            <div class="value-card">
+              <div class="value-card-header">
+                <div class="value-card-icon icon-cyan">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <span class="value-tag">Zero Compromise</span>
+              </div>
+              <h4 class="value-title">Reliability First</h4>
+              <p class="value-desc">High-availability redundant architecture backed by global distributed edge servers ensuring constant uptime.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-card-header">
+                <div class="value-card-icon icon-indigo">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                    <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                  </svg>
+                </div>
+                <span class="value-tag">Continuous Insights</span>
+              </div>
+              <h4 class="value-title">Data-Driven Growth</h4>
+              <p class="value-desc">Actionable real-time telemetry and audience insights to optimize every touchpoint of your user journey.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-card-header">
+                <div class="value-card-icon icon-violet">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <span class="value-tag">Community Powered</span>
+              </div>
+              <h4 class="value-title">Collaborative Ecosystem</h4>
+              <p class="value-desc">Built-in workspaces that empower developers, designers, and managers to ship collectively faster.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURES SECTION (3 Cards) -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Key Capabilities</span>
+          <h2 class="section-title">Engineered to Supercharge Your Workflow</h2>
+          <p class="section-description">
+            Discover three foundational pillars designed to eliminate bottlenecks, fortify your stack, and deliver seamless interactions.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1: Performance -->
+          <article class="feature-card" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="feature-icon-box box-amber">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+
+              <div class="feature-meta">
+                <span class="feature-step">01 / SPEED</span>
+              </div>
+
+              <h3 class="feature-title">Lightning Performance</h3>
+              <p class="feature-description">
+                Engineered with modern web standards, optimized asset pipelines, and sub-millisecond edge response times for instant page loads.
+              </p>
+
+              <ul class="feature-checklist">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Sub-second TTFB on global CDNs</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Automatic image and code optimization</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Lightweight zero-dependency architecture</span>
+                </li>
+              </ul>
+
+              <div class="feature-card-footer">
+                <span class="feature-metric"><strong>3x</strong> Faster than legacy platforms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Security -->
+          <article class="feature-card highlight-card" data-tilt>
+            <div class="popular-ribbon">Most Essential</div>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="feature-icon-box box-cyan">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+
+              <div class="feature-meta">
+                <span class="feature-step">02 / SECURITY</span>
+              </div>
+
+              <h3 class="feature-title">Bank-Grade Protection</h3>
+              <p class="feature-description">
+                Comprehensive security architecture with end-to-end encryption, automated vulnerability detection, and continuous compliance checks.
+              </p>
+
+              <ul class="feature-checklist">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>AES-256 bit encryption at rest &amp; transit</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Automatic DDoS mitigation &amp; rate limiting</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>SOC2 &amp; GDPR compliance ready</span>
+                </li>
+              </ul>
+
+              <div class="feature-card-footer">
+                <span class="feature-metric"><strong>100%</strong> Automated daily audits</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Seamless Collaboration -->
+          <article class="feature-card" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="feature-icon-box box-violet">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+
+              <div class="feature-meta">
+                <span class="feature-step">03 / COLLABORATION</span>
+              </div>
+
+              <h3 class="feature-title">Seamless Team Sync</h3>
+              <p class="feature-description">
+                Empower distributed squads to collaborate in real-time with granular role management, shared workspaces, and instant preview branches.
+              </p>
+
+              <ul class="feature-checklist">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Multiplayer live presence &amp; comments</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Role-based access permissions</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Instant branch previews with shareable URLs</span>
+                </li>
+              </ul>
+
+              <div class="feature-card-footer">
+                <span class="feature-metric"><strong>Unlimited</strong> Team members on Pro</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CONTACT SECTION (Simple Contact Form with Name & Email) -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <span class="section-badge">Get In Touch</span>
+            <h2 class="contact-title">Let’s build something extraordinary together.</h2>
+            <p class="contact-description">
+              Have questions about how Nexus fits your product stack? Or simply want to explore custom enterprise solutions? Fill in the quick form and our technical team will reach out within 2 hours.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-card-item">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Direct Email</span>
+                  <a href="mailto:hello@nexusplatform.io" class="contact-item-val">hello@nexusplatform.io</a>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Average Response Time</span>
+                  <span class="contact-item-val">&lt; 2 Hours (Mon - Fri)</span>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Global Presence</span>
+                  <span class="contact-item-val">San Francisco • London • Tokyo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Contact Form -->
+          <div class="contact-form-card">
+            <div class="form-card-header">
+              <h3 class="form-title">Send Us a Message</h3>
+              <p class="form-subtitle">Fill in your information below to connect.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group" id="group-name">
+                <label for="contact-name" class="form-label">
+                  Full Name <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </span>
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="e.g. Alex Morgan"
+                    autocomplete="name"
+                    required
+                  >
+                </div>
+                <div class="error-feedback" id="name-error" role="alert">Please enter your name</div>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group" id="group-email">
+                <label for="contact-email" class="form-label">
+                  Email Address <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="alex@company.com" 
+                    autocomplete="email"
+                    required
+                  >
+                </div>
+                <div class="error-feedback" id="email-error" role="alert">Please provide a valid email address</div>
+              </div>
+
+              <!-- Message Input (Clean and helpful for real users) -->
+              <div class="form-group" id="group-message">
+                <label for="contact-message" class="form-label">
+                  How can we help? <span class="optional-mark">(Optional)</span>
+                </label>
+                <div class="input-wrapper textarea-wrapper">
+                  <textarea 
+                    id="contact-message" 
+                    name="message" 
+                    class="form-input form-textarea" 
+                    rows="3" 
+                    placeholder="Tell us about your project goals..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true">
+                  <svg class="spin-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+                    <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div class="form-trust-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>We respect your privacy. No spam guaranteed.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 19.5H7.5L12 10.5L16.5 19.5H22L12 2Z" fill="url(#footer-logo-grad)"/>
+                <defs>
+                  <linearGradient id="footer-logo-grad" x1="2" y1="2" x2="22" y2="19.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#818cf8"/>
+                    <stop offset="1" stop-color="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="brand-name">Nexus<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            Empowering the modern web with high performance, elegant aesthetics, and effortless scale.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-nav-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-list">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-col-title">Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon-btn" aria-label="Twitter / X" title="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Nexus Technologies Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
